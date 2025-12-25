@@ -1,0 +1,132 @@
+.form-wrapper .hidden
+{
+    display: none !important;
+}
+
+.form-wrapper
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .form-wrapper form
+    {
+        background: linear-gradient(15deg, var(--color-gray-900) -10%, var(--color-gray-950) 150%);
+        padding: 2rem;
+        max-width: 500px;
+        width: 80%;
+        border-radius: 2rem;
+    }
+
+        .form-wrapper form .icon
+        {
+            padding: 1rem;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+
+        .form-wrapper form p.description
+        {
+            color: var(--color-gray-500);
+            margin-top: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-wrapper form .scala
+        {
+            display: flex;
+            justify-content: space-between;
+            margin: 2rem 0;
+        }
+
+            .form-wrapper form .scala input[type="radio"]
+            {
+                display: none;
+            }
+
+            .form-wrapper form .scala label
+            {
+                background-color: var(--color-gray-900);
+                width: 3rem;
+                height: 3rem;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                transition: background-color 0.3s, color 0.3s;
+                user-select: none;
+            }
+
+                .form-wrapper form .scala label:hover
+                {
+                    background-color: var(--color-primary) !important;
+                    color: var(--color-gray-950);
+                }
+
+            .form-wrapper form .scala input[type="radio"]:checked + label
+            {
+                background-color: var(--color-white);
+                color: var(--color-gray-950);
+            }
+
+        .form-wrapper form button
+        {
+            width: 100%;
+            padding: 1rem;
+            background-color: var(--color-primary);
+            font-family: var(--font-family-base);
+            border: none;
+            border-radius: 2rem;
+            color: var(--color-gray-950);
+            font-weight: 700;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+        }
+
+            .form-wrapper form button:hover
+            {
+                background-color: var(--color-white);
+                color: var(--color-gray-950);
+            }
+
+    .form-wrapper .form-submitted
+    {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .form-wrapper .form-submitted .picture
+        {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-wrapper .form-submitted .info
+        {
+            padding: 0.25rem 2rem;
+            background-color: rgba(255, 255, 255, 0.05);
+            color: var(--color-primary);
+            border-radius: 5rem;
+            margin-bottom: 1.5rem;
+        }
+
+.error
+{
+    animation: error_wiggle 0.3s ease-in-out;
+}
+
+@keyframes error_wiggle
+{
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}

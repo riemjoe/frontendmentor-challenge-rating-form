@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root
+{
+    --color-primary: hsl(25, 97%, 53%);
+
+    --color-white: hsl(0, 100%, 100%);
+    --color-gray-500: hsl(217, 12%, 63%);
+    --color-gray-900: hsl(213, 19%, 18%);
+    --color-gray-950: hsl(216, 12%, 8%);
+
+    --font-family-base: 'Open Sans', sans-serif;
+
+}
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body
+{
+    height: 100%;
+    font-family: var(--font-family-base);
+    background-color: var(--color-gray-950);
+    color: var(--color-white);
+}

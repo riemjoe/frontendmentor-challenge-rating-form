@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Give Feedback | Webdesign Riemer</title>
+    <link rel="stylesheet" href="./app/sources/css/stylesheet_index.css">
+    <script src="./app/sources/js/FormHandler.js"></script>
+</head>
+<body>
+    <section class="form-wrapper">
+        <form action="#" method="post" id="form">
+            <img src="./app/resources/icons/icon-star.svg" alt="Star Icon" class="icon">
+            <h2>How did we do?</h2>
+            <p class="description">
+                Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
+            </p>
+            <div class="scala">
+                <input type="radio" id="rate-1" name="rating" value="1">
+                <label for="rate-1">1</label>
+                <input type="radio" id="rate-2" name="rating" value="2">
+                <label for="rate-2">2</label>
+                <input type="radio" id="rate-3" name="rating" value="3">
+                <label for="rate-3">3</label>
+                <input type="radio" id="rate-4" name="rating" value="4">
+                <label for="rate-4">4</label>
+                <input type="radio" id="rate-5" name="rating" value="5">
+                <label for="rate-5">5</label>
+            </div>
+            <button type="button" id="button_submit">Submit</button>
+        </form>
+        <form action="#" method="post" id="form-submitted-view" class="form-submitted hidden">
+            <img src="./app/resources/pictures/illustration-thank-you.svg" alt="Illustration Thank You" class="picture">
+            <p class="info">You selected <span name="label_selected_value">x</span> out of 5</p>
+            <h2>Thank you!</h2>
+            <p class="description">
+                We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!
+            </p>
+        </form>
+    </section>
+</body>
+</html>
